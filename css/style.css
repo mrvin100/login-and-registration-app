@@ -1,0 +1,395 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+/* custom css file made by JeanDoe */
+
+/* initaialisation */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+/*  declaration of variables  */
+:root{
+    --main-clr: #FF6D6D99;
+    --main-clr-alt: #FFD7D7;
+    --second-clr: #567;
+    --light-bg: #f1e1d1;
+    --white-bg: #f9fafa;
+    --second-bg: #e5e5e5;
+    --white: #fff;
+    --black: #1a1b1c;
+    --light-clr: #00000099;
+    --body-font: 'Nunito', Arial, sans-serif;;
+    --border: 1px solid rgba(255, 255, 255, 1);;
+    --box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+/* base */
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--white);
+    font-weight: 300;
+    font-size: 0.938rem;
+    font-family: var(--body-font);
+    color: var(--black);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/*  dark and light theme */
+
+body.dark{
+    --light-bg: #2f2f1f;
+    --white-bg: #141414;
+    --second-bg: #2b2b2b;
+    --white: #1a1b1c;
+    --black: #fff;
+    --light-clr: rgba(255, 255, 255, .5);
+    --border: 1px solid rgba(255, 255, 255, .1);
+}
+
+/* reusables classes */
+
+.header,
+.footer,
+.section{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.heading{
+    font-size: 1.2rem;
+    color: var(--light-clr);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 2rem;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-transform: capitalize;
+    transition: all .2s ease;
+    color: var(--white);
+    border: var(--border);
+    background: transparent;
+    transition: ease-in-out .5s;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+}
+.btn:hover{
+    box-shadow: var(--box-shadow);
+}
+
+#theme-btn{
+    font-size: 1.2rem;
+    color: var(--main-clr);
+    padding: 0.3rem 0.5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--main-clr);
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.link{
+    color: var(--white);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.main{
+    max-height: 731px;
+    max-width: 411px;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* header section starts */
+
+
+
+/* home section starts */
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home .content{
+    position: absolute;
+    top: 239px;
+    left: 40px;
+    max-width: 192px;
+}
+
+.home .content img{
+    margin-left: 9px;
+}
+
+.home .content h2{
+    font-size: 36px;
+}
+
+.home .content p{
+    font-size: 24px;
+    color: var(--light-clr);
+}
+
+/* polygone section starts */
+.polygone-main{
+    background: var(--main-clr);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+.polygone{
+    background: var(--main-clr-alt);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+
+.polygone-1{
+    height: 30%;
+    width: 95%;
+    position: absolute;
+    top: -14%;
+    left: -40%;
+    transform: rotate(-30deg);
+
+}
+
+.polygone-2{
+    position: absolute;
+    transform: rotate(-35deg);
+    width: 361px;
+    height: 296px;
+    top: -50px;
+    left: 252px;
+}
+
+.polygone-3{
+    position: absolute;
+    transform: rotate(-48deg);
+    width: 361px;
+    height: 296px;
+    top: 10px;
+    left: 282px;
+
+}
+
+.polygone-4{
+    height: 395px;
+    width: 417px;
+    position: absolute;
+    top: 351px;
+    right: 376px;
+    transform: rotate(140deg);
+}
+
+.home .polygone-5{
+    position: absolute;
+    width: 811px;
+    height: 604px;
+    top: 545px;
+    left: 55px;
+    transform: rotate(-130.81deg);
+}
+
+.home .btn{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 5;
+}
+
+/* login section starts */
+
+.login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.login .polygone-5{
+    position: absolute;
+    width: 811px;
+    height: 604px;
+    top: 285px;
+    right: -55px;
+    transform: rotate(20.81deg);
+}
+.login .polygone-4{
+    display: none;
+}
+
+.login .form{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.login .form{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 3;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.login .form input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    border: var(--border);
+    background: transparent;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.login .flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.login .flex p{
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.login input:focus{
+    box-shadow: var(--box-shadow);
+}
+
+
+.login .icons img{
+    padding: 0.3rem;
+    background: var(--white);
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+    object-fit: contain;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* register section starts */
+
+.register{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.register .polygone-5{
+    position: absolute;
+    width: 811px;
+    height: 604px;
+    top: 255px;
+    right: -55px;
+    transform: rotate(20.81deg);
+}
+.register .polygone-4{
+    display: none;
+}
+
+.register .form{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.register .form{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 3;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.register .form input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+    border: var(--border);
+    background: transparent;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.register .flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.register .btn{
+    float: right;
+}
+
+.register .flex p{
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.register input:focus{
+    box-shadow: var(--box-shadow);
+}
+
+
+.register .icons img{
+    padding: 0.3rem;
+    background: var(--white);
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+    object-fit: contain;
+    box-shadow: var(--box-shadow);
+}
